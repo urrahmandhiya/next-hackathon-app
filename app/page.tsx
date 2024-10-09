@@ -1,9 +1,11 @@
+import Content from "@/components/Content";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <>
-      <div className="text-4xl text-emerald-500">
-      Hello World
-      </div>
+      <Hero />
+      <Content />
     </>
   );
 }

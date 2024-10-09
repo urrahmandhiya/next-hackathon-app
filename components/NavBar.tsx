@@ -13,15 +13,16 @@ const NavBar = () => {
     
   return (
       <nav className='flex items-center justify-between 
-    mx-auto max-w-[1440px]
-    px-6 lg:px-20 3xl:px-0
-    relative z-50 py-5'>
+            mx-auto max-w-[1440px]
+            px-6 lg:px-20 3xl:px-0
+            relative z-50 py-5'
+        >
           <Link href={'/'}
           >
             <Image
-                src={'/hilink-logo.svg'}
-                alt='logo' width={74}
-                height={29}
+                src={'/leuwimalang-logo.svg'}
+                alt='logo' width={150}
+                height={60}
             />
           </Link>
           <ul className='hidden h-full gap-12 lg:flex'>
@@ -63,7 +64,7 @@ const NavBar = () => {
               className='inline-block cursor-pointer lg:hidden'
               onClick={menuToggle}
           />
-          {/* DONT FORGET TO IMPROVE THIS PREFERABLY 80% WIDTH ASIDE MENU WITH RIGHT TO LEFT ANIMATION */}
+          {/* DONT FORGET TO IMPROVE. THIS PREFERABLY 80% WIDTH ASIDE MENU WITH RIGHT TO LEFT ANIMATION */}
           {/* Dropdown Menu (Mobile) */}
           {menu && (
               <ul className='absolute top-full left-0 w-full 
