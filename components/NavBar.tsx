@@ -13,47 +13,47 @@ const NavBar = () => {
     
   return (
       <nav className='flex items-center justify-between 
-            mx-auto max-w-[1440px]
+            mx-auto max-w-full
             px-6 lg:px-20 3xl:px-0
-            relative z-50 py-5'
+            relative z-50 py-5 bg-asparagus'
         >
           <Link href={'/'}
           >
             <Image
-                src={'/leuwimalang-logo.svg'}
-                alt='logo' width={150}
-                height={60}
+                src={'/temp-logo.svg'}
+                alt='logo' width={100}
+                height={10}
             />
           </Link>
           <ul className='hidden h-full gap-12 lg:flex'>
               <Link className='flex items-center justify-center 
-              text-lg text-gray-50 font-light pb-1.5 cursor-pointer
+              text-lg text-white font-light pb-1.5 cursor-pointer
               transition-all hover:font-bold'
                   href={'/'} key={'home'}
               >
                   Home
               </Link>
               <Link className='flex items-center justify-center 
-              text-lg text-gray-50 font-light pb-1.5 cursor-pointer
+              text-lg text-white font-light pb-1.5 cursor-pointer
               transition-all hover:font-bold'
-                  href={'/'} key={'about'}
+                  href={'/attraction'} key={'attraction'}
               >
-                  About
+                  Attraction
               </Link>
               <Link className='flex items-center justify-center 
-              text-lg text-gray-50 font-light pb-1.5 cursor-pointer
+              text-lg text-white font-light pb-1.5 cursor-pointer
               transition-all hover:font-bold'
-                  href={'/'} key={'form'}
+                  href={'/blog'} key={'blog'}
               >
-                  Form
+                  Blog
               </Link>
           </ul>
           <div className='lg:flex lg:items-center lg:justify-center hidden'>
             <Button
                 type='button'
-                title='Test'
+                title='Log In'
                 icon='/user.svg'
-                variant='btn_dark_green'
+                variant='btn_signup'
             />  
           </div>
           <Image

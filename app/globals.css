@@ -30,6 +30,12 @@ body {
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
+  .btn_signup  { 
+    @apply border-white bg-transparent px-8 py-3 text-white
+  }
+  .btn_judge_gray { 
+    @apply border-judgeGray bg-judgeGray px-8 py-3 text-white
+  }
   
   .max-container {
     @apply mx-auto max-w-[1440px];
