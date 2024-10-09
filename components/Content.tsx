@@ -32,7 +32,7 @@ const Attraction = ({ backgroundImage, title, subtitle }: AttractionProps) => {
 const Content = () => {
     const attractions = [
         {
-            backgroundImage: "bg-bg-img-2",
+            backgroundImage: "bg-bg-img-1",
             title: "Mountain View Camp",
             subtitle: "Somewhere in the Wilderness",
         },
