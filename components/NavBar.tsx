@@ -49,12 +49,14 @@ const NavBar = () => {
               </Link>
           </ul>
           <div className='lg:flex lg:items-center lg:justify-center hidden'>
-            <Button
-                type='button'
-                title='Log In'
-                icon='/user.svg'
-                variant='btn_signup'
-            />  
+            <Link href={'/auth'}>
+                <Button
+                    type='button'
+                    title='Log In'
+                    icon='/user.svg'
+                    variant='btn_signup'
+                />  
+            </Link>
           </div>
           <Image
               src={'/menu.svg'}
@@ -68,7 +70,7 @@ const NavBar = () => {
           {/* Dropdown Menu (Mobile) */}
           {menu && (
               <ul className='absolute top-full left-0 w-full 
-              bg-gray-800 text-white
+              bg-olivine text-white
               flex flex-col items-center lg:hidden'>
                   <Link className='block py-4 text-lg font-light 
                   cursor-pointer transition-all hover:font-bold'
@@ -78,15 +80,15 @@ const NavBar = () => {
                   </Link>
                   <Link className='block py-4 text-lg font-light 
                   cursor-pointer transition-all hover:font-bold'
-                      href={'/about'}
-                      key={'about'}>
-                      About
+                      href={'/attraction'}
+                      key={'attraction'}>
+                      Attraction
                   </Link>
                   <Link className='block py-4 text-lg font-light 
                   cursor-pointer transition-all hover:font-bold'
-                      href={'/form'}
-                      key={'form'}>
-                      Form
+                      href={'/blog'}
+                      key={'blog'}>
+                      Blog
                   </Link>
               </ul>
           )}

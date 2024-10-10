@@ -1,30 +1,35 @@
 import React from 'react'
 import Button from './Button';
+import Link from 'next/link';
 
 export const FEATURES = [
     {
         title: 'Farming',
         backgroundImage: "bg-bg-img-1",
-        description:
-            'Visit a local organic garden and learn about sustainable farming techniques.',
+        description: 'Visit a local organic garden and learn about sustainable farming techniques.',
+        activities: ['Farm tours', 'Workshops', 'Planting lessons'],
+        info: 'Located in the heart of the countryside, this farm offers an immersive experience for visitors.',
     },
     {
         title: 'Waterfall',
         backgroundImage: 'bg-bg-img-2',
-        description:
-            "Enjoy the stunning of Leuwimalang Waterfall, this place is perfect for relaxing, and taking pictures.",
+        description: "Enjoy the stunning of Leuwimalang Waterfall, this place is perfect for relaxing and taking pictures.",
+        activities: ['Photography', 'Swimming', 'Guided hikes'],
+        info: 'Open year-round, the waterfall is accessible via a short hike through scenic woodlands.',
     },
     {
         title: 'Trekking',
         backgroundImage: 'bg-bg-img-3',
-        description:
-            'Explore challenging trekking trails amidst forests and rice fields. Experience the beauty of nature.',
+        description: 'Explore challenging trekking trails amidst forests and rice fields. Experience the beauty of nature.',
+        activities: ['Hiking', 'Bird watching', 'Wildlife exploration'],
+        info: 'Bring appropriate gear for the challenging trails. Guided treks are available upon request.',
     },
     {
         title: 'Hiking',
         backgroundImage: 'bg-bg-img-4',
-        description:
-            ' Get an exciting hiking experience. Enjoy the challenges of varied terrain and spectacular views from a height.',
+        description: 'Get an exciting hiking experience. Enjoy the challenges of varied terrain and spectacular views from a height.',
+        activities: ['Hiking tours', 'Mountain climbing', 'Scenic photography'],
+        info: 'The perfect destination for adventurers looking for a mix of physical challenge and natural beauty.',
     },
 ];
 
@@ -51,11 +56,13 @@ const AttractionPage = () => {
                         </button>
                     </div>
 
-                    <Button
-                        type='button'
-                        title='Booking'
-                        variant='btn_judge_gray'
-                    />
+                    <Link href={'/attraction/book'} >
+                        <Button
+                            type="button"
+                            title="Booking"
+                            variant="btn_judge_gray"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="max-container padding-container relative w-full flex justify-end">
@@ -76,25 +83,28 @@ const AttractionPage = () => {
     )
 }
 
-type FeatureItem = {
+type FeatureItemProps = {
     title: string;
     backgroundImage: string;
     description: string;
 }
 
-const FeatureItem = ({ title, backgroundImage, description }: FeatureItem) => {
+const FeatureItem = ({ title, backgroundImage, description }: FeatureItemProps) => {
+    const slug = title.toLowerCase().replace(/\s+/g, '-'); // Convert title to slug
+
     return (
-        <li className="flex w-full flex-1 flex-col items-stat shadow-lg rounded p-6">
+        <li className="flex w-full flex-1 flex-col items-start shadow-lg rounded p-6">
             <div className={`rounded p-24 lg:px-20 lg:py-28 ${backgroundImage} w-full object-cover object-center`}>
             </div>
-            <h2 className="bold-20 lg:bold-32 mt-5 capitalize">
-                {title}
-            </h2>
+            <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
             <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
                 {description}
             </p>
+            <Link href={`/attraction/${slug}`}>
+                <div className="text-blue-600 hover:underline mt-5">Learn More</div>
+            </Link>
         </li>
-    )
+    );
 }
 
 export default AttractionPage

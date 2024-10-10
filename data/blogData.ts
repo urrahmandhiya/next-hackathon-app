@@ -1,0 +1,42 @@
+export const BLOGS = [
+    {
+        title: 'Relaxing on the Riverbank of Leuwimalang Village',
+        slug: 'relaxing-on-the-riverbank',
+        author: 'Luzika',
+        date: 'April 17, 2023',
+        content: 'In the middle of trekking, we found a small river with a clear flow, the water sparkling in the sunlight. We decided to take a break, and I sat on the bank, dipping my feet into the cool water. The sound of the flowing river was soothing, accompanied by the rustling of leaves and the distant calls of birds. It was a perfect moment of tranquility, allowing us to connect with nature and reflect on the beauty surrounding us. As we shared snacks and laughter, we felt a deep sense of gratitude for the simple joys in life.',
+        image: '/blog-banner2.png',
+    },
+    {
+        title: 'The Farming Process in Leuwimalang Village',
+        slug: 'the-farming-process',
+        author: 'Urney',
+        date: 'December 14, 2022',
+        content: 'During our visit to Leuwimalang Village, we were invited by the locals to witness their farming practices. As we walked through the lush green fields, we learned about their sustainable methods of cultivation, using natural fertilizers and traditional irrigation techniques. The farmers shared their stories of hard work and dedication, emphasizing the importance of preserving their agricultural heritage. We even got to participate in planting rice, which was both challenging and rewarding. This experience opened my eyes to the hard work behind our food and the importance of supporting local agriculture.',
+        image: '/blog-post1.png',
+    },
+    {
+        title: 'Enjoying the Cool Air While Trekking in Leuwimalang',
+        slug: 'enjoying-the-cool-air',
+        author: 'Hoseki',
+        date: 'July 12, 2022',
+        content: 'Early in the morning, we set off for trekking around Leuwimalang Village, breathing in the fresh, crisp air that invigorated our spirits. The trail wound through dense forests, vibrant with the sounds of nature. We marveled at the diverse flora and fauna, spotting colorful butterflies and hearing the distant calls of exotic birds. As we reached a scenic viewpoint, the panoramic views of the village below took our breath away. It was a reminder of the beauty that lies just beyond our daily lives, and the trek was a perfect escape into the heart of nature.',
+        image: '/blog-post2.png',
+    },
+    {
+        title: 'Typical Culinary in Leuwimalang',
+        slug: 'typical-culinary',
+        author: 'Lyca',
+        date: 'October 20, 2021',
+        content: 'Leuwimalang Village cuisine is not just about food, but also part of the cultural identity of its people. We were treated to traditional dishes made from locally sourced ingredients. Each meal was rich with flavors, from the spicy sambal to the fragrant rice. The locals shared recipes passed down through generations, and we even tried our hand at cooking some dishes ourselves! The experience deepened our appreciation for the culinary arts and the stories that each meal tells, making it clear that food in Leuwimalang is a celebration of community and tradition.',
+        image: '/blog-post3.png',
+    },
+    {
+        title: 'Educational Tour in Leuwimalang',
+        slug: 'educational-tour',
+        author: 'Olla',
+        date: 'January 13, 2021',
+        content: 'Our experience in Leuwimalang Village was enlightening, as we engaged in an educational tour that showcased the community’s commitment to sustainability. We visited an organic farm, where we learned about permaculture and the importance of biodiversity. The hands-on activities allowed us to understand the impact of agriculture on the environment and the vital role that responsible farming plays in preserving the ecosystem. The passion of the locals for educating others about their practices left a lasting impression on us, inspiring a commitment to eco-friendly practices in our own lives.',
+        image: '/blog-post4.png',
+    },
+];
