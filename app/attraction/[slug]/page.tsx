@@ -1,40 +1,10 @@
 import Button from '@/components/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-
-export const FEATURES = [
-    {
-        title: 'Farming',
-        backgroundImage: "/attraction1.png",
-        description: 'Visit a local organic garden and learn about sustainable farming techniques.',
-        activities: ['Farm tours', 'Workshops', 'Planting lessons'],
-        info: 'Located in the heart of the countryside, this farm offers an immersive experience for visitors.',
-    },
-    {
-        title: 'Waterfall',
-        backgroundImage: '/attraction2.png',
-        description: "Enjoy the stunning Leuwimalang Waterfall, perfect for relaxing and taking pictures.",
-        activities: ['Photography', 'Swimming', 'Guided hikes'],
-        info: 'Open year-round, the waterfall is accessible via a short hike through scenic woodlands.',
-    },
-    {
-        title: 'Trekking',
-        backgroundImage: '/attraction3.png',
-        description: 'Explore challenging trekking trails amidst forests and rice fields. Experience the beauty of nature.',
-        activities: ['Hiking', 'Bird watching', 'Wildlife exploration'],
-        info: 'Bring appropriate gear for the challenging trails. Guided treks are available upon request.',
-    },
-    {
-        title: 'Hiking',
-        backgroundImage: '/attraction4.png',
-        description: 'Get an exciting hiking experience. Enjoy the challenges of varied terrain and spectacular views.',
-        activities: ['Hiking tours', 'Mountain climbing', 'Scenic photography'],
-        info: 'The perfect destination for adventurers looking for a mix of physical challenge and natural beauty.',
-    },
-];
+import { ATTRACTION } from '@/data/attractionData';
 
 export async function generateStaticParams() {
-    return FEATURES.map((feature) => ({
+    return ATTRACTION.map((feature) => ({
         slug: feature.title.toLowerCase().replace(/\s+/g, '-'),
     }));
 }
@@ -47,7 +17,7 @@ type AttractionPageProps = {
 
 const AttractionDetailPage = ({ params }: AttractionPageProps) => {
     // Find the specific attraction based on the slug from the params
-    const attraction = FEATURES.find(
+    const attraction = ATTRACTION.find(
         (feature) => feature.title.toLowerCase().replace(/\s+/g, '-') === params.slug
     );
 
