@@ -1,6 +1,6 @@
 import AttractionPage from "@/components/AttractionPage"
 
-const BlogPage = () => {
+const AttractionHome = () => {
   return (
       <>
           <AttractionPage />
@@ -8,4 +8,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default AttractionHome

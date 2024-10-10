@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
       <nav className='flex items-center justify-between 
             mx-auto max-w-full
-            px-6 lg:px-20 3xl:px-0
+            px-6 lg:px-20 3xl:px-6
             relative z-50 py-5 bg-asparagus'
         >
           <Link href={'/'}

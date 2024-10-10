@@ -3,28 +3,28 @@ import Button from './Button';
 
 export const FEATURES = [
     {
-        title: 'Real maps can be offline',
-        backgroundImage: 'bg-bg-img-1',
+        title: 'Farming',
+        backgroundImage: "bg-bg-img-1",
         description:
-            'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+            'Visit a local organic garden and learn about sustainable farming techniques.',
     },
     {
-        title: 'Set an adventure schedule',
-        backgroundImage: 'bg-bg-img-1',
-        description:
-            "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
-    },
-    {
-        title: 'Technology using augment reality',
+        title: 'Waterfall',
         backgroundImage: 'bg-bg-img-2',
         description:
-            'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+            "Enjoy the stunning of Leuwimalang Waterfall, this place is perfect for relaxing, and taking pictures.",
     },
     {
-        title: 'Many new locations every month',
-        backgroundImage: 'bg-bg-img-2',
+        title: 'Trekking',
+        backgroundImage: 'bg-bg-img-3',
         description:
-            'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+            'Explore challenging trekking trails amidst forests and rice fields. Experience the beauty of nature.',
+    },
+    {
+        title: 'Hiking',
+        backgroundImage: 'bg-bg-img-4',
+        description:
+            ' Get an exciting hiking experience. Enjoy the challenges of varied terrain and spectacular views from a height.',
     },
 ];
 
@@ -54,7 +54,7 @@ const AttractionPage = () => {
                     <Button
                         type='button'
                         title='Booking'
-                        variant='btn_dark_green'
+                        variant='btn_judge_gray'
                     />
                 </div>
             </div>

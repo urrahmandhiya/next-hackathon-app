@@ -4,10 +4,10 @@ import React from 'react'
 const HomeBanner = () => {
     return (
         <section className="flex items-center justify-center flex-col">
-            <div className="flex items-center justify-center mx-auto max-w-full relative w-full">
+            <div className="flex items-center justify-center mx-auto h-[300px] lg:h-[580px] max-w-full relative w-full">
                 <Image
-                    src="/boat.png"
-                    alt="boat"
+                    src="/home-banner2.png"
+                    alt="home-banner2"
                     width={1440}
                     height={580}
                     className="w-full h-full object-cover object-center"
